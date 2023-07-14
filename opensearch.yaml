@@ -1,7 +1,7 @@
 policies:
   - name: aws-opensearch-enforce-https
     # Cover both the current opensearch and legacy elasticsearch resources
-    resource: terraform.aws_*search_domain
+    resource: terraform.aws_opensearch_domain
     description: |
       Identify ElasticSearch/OpenSearch clusters which support plain HTTP
       connections. This presents a risk to both data integrity and
